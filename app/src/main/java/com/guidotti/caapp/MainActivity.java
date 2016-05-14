@@ -1,5 +1,10 @@
 package com.guidotti.caapp;
 
+/**
+ * Shared on GitHub on ConcussionAwareness.App repository
+ */
+
+
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -25,15 +30,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         layout = (RelativeLayout) findViewById(R.id.layout);
-        button = (Button) findViewById(R.id.button);
-        
+        button = (Button) findViewById(R.id.prevbutton);
+        button = (Button) findViewById(R.id.nextbutton);
+
+        layout.setBackgroundColor(Color.rgb(34, 139, 34));
+
+        //Word intro = new Word();
+        //layout.addView();
+
         button.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v) {
                 layout.removeView(findViewById(R.id.word));
                 Word word = new Word(that);
                 layout.addView(word);
-                layout.setBackgroundColor(Color.rgb((int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255)));
+                //layout.setBackgroundColor(Color.rgb((int) 34, 139, 34));
+                //Girl Scout Green???
             }
         });
     }
