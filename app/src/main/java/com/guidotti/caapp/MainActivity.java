@@ -50,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void setLayout(View x){
+        Word word = new Word(that);
+        layout.addView(x);
+}
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
