@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         layout = (RelativeLayout) findViewById(R.id.layout);
-        button = (Button) findViewById(R.id.prevbutton);
+
+
         button = (Button) findViewById(R.id.nextbutton);
 
         layout.setBackgroundColor(Color.rgb(34, 139, 34));
@@ -48,6 +49,21 @@ public class MainActivity extends AppCompatActivity {
                 //Girl Scout Green???
             }
         });
+
+        final AppCompatActivity that = this;
+
+        //sleep button
+        button = (Button) findViewById(R.id.sleepbutton);
+        button.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v) {
+                layout.removeView(findViewById(R.id.word));
+                SleepHygiene sleep = new SleepHygiene(that);
+                layout.addView(sleep);
+
+            }
+        });
+
     }
 
     public void setLayout(View x){
