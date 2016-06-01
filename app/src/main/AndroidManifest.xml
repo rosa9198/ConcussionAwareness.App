@@ -22,6 +22,23 @@
             android:name=".SleepHygiene"
             android:label="@string/title_activity_sleep_hygiene"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Sleep_Hygiene"
+            android:label="@string/title_activity_sleep__hygiene"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Rating"
+            android:label="@string/title_activity_rating"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Calendar"></activity>
     </application>
 
 </manifest>

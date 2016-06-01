@@ -14,20 +14,64 @@
 
 
 
-    <TextView
-        android:id="@+id/word"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:text="Hello World!" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/linearLayout">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height=".5in"
-        android:id="@+id/button"
-        android:text="Push to get new Info"
-        android:textSize="22sp"
-        android:layout_alignParentBottom="true"
-        />
+        <TextView
+            android:id="@+id/word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="Concussion Awareness App"
+            android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Created by: Gina G"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sleep"
+            android:layout_below="@+id/word"
+            android:id="@+id/nextbutton"
+            android:text="Random Activity"
+            android:textSize="12sp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nextbutton"
+            android:id="@+id/sleepbutton"
+            android:text="Sleep Tips"
+            android:textSize="12sp"
+            />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rate your Symptoms/Pain"
+                android:id="@+id/Rating"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calendar (In Progress)"
+                android:id="@+id/calbutton"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
 
 </RelativeLayout>

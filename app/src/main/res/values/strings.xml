@@ -6,7 +6,6 @@
     <string name="calendar">Calendar</string>
     <string name="title_activity_sleep_hygiene">SleepHygiene</string>
     <string name="large_text">
-        "Follow tips below to sleep better at night: \n\n\n"
         "1. Get on a schedule. Go to bed and get up at about the same time every day. \n\n"
         "2.	Listen to your body. \n\n"
         "3.	Be patient. If you haven’t been able to get to sleep after about 20 minutes or more, get up and do something calming or boring until you feel sleepy and try again.\n\n"
@@ -22,6 +21,8 @@
         "13. Create the right sleeping area. A cool, dark, quiet room is best. If needed try earplugs, fans and blackout curtains. \n\n"
         "14. Keep your daytime routine the same even if you have a bad night sleep. Avoiding activities the next day can make it harder to sleep. \n\n"
     </string>
+    <string name="title_activity_sleep__hygiene">Sleep_Hygiene</string>
+    <string name="title_activity_rating">Rating</string>
 
 
 </resources>
