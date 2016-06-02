@@ -19,8 +19,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Set Activity"
-        android:id="@+id/setAct"
+        android:text="Save"
+        android:id="@+id/saveButton"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -43,9 +43,9 @@
         android:ems="10"
         android:id="@+id/editTime"
         android:text="Time:"
-        android:layout_above="@+id/editAct"
-        android:layout_toRightOf="@+id/setAct"
-        android:layout_toEndOf="@+id/editDate" />
+        android:layout_below="@+id/calView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <EditText
         android:layout_width="match_parent"

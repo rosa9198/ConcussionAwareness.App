@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
-            android:id="@+id/Blank2"
+            android:id="@+id/blank2"
             android:layout_gravity="center_horizontal" />
 
         <ScrollView

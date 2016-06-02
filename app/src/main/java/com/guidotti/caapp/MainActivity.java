@@ -50,11 +50,10 @@ public class MainActivity extends AppCompatActivity {
         final AppCompatActivity that = this;
 
         rand = (Button) findViewById(R.id.nextbutton);
+        layout.removeView(findViewById(R.id.word));
+        layout.removeView(findViewById(R.id.textView));
         rand.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                layout.removeView(findViewById(R.id.word));
-                layout.removeView(findViewById(R.id.textView));
-
                 Word word = new Word(that);
                 Intent myIntent = new Intent(MainActivity.this, Word.class);
                 MainActivity.this.startActivity(myIntent);
